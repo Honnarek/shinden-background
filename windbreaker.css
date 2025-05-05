@@ -1,0 +1,192 @@
+/* 
+  Wind Breaker  Shinden theme 
+  Author: Honnari
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+:root {
+  --main-bg-color: rgba(20, 20, 20, 0.9); 
+  --secondary-bg-color: rgba(40, 40, 40, 0.7); 
+  --neon-green: #00FFCC; 
+  --neon-blue: #00BFFF; 
+  --neon-pink: #FF6EC7; 
+  --neon-purple: #D580FF;
+  --text-color: #ecf0f1;
+  --link-color: #00FFFF;
+  --link-hover: #FF00FF;
+  --border-color: #555;
+  --highlight: #00FFFF;
+}
+
+body {
+  background: url('https://i.imgur.com/tPspFT2.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--text-color);
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Container backgrounds */
+.container,
+.main-content,
+.content,
+.profile-info,
+#anime-list,
+.user-section,
+.module,
+#page,
+.box,
+.frame {
+  background-color: var(--main-bg-color);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
+/* Headers */
+h1, h2, h3, h4, h5 {
+  color: var(--neon-purple);
+  text-shadow: 1px 1px 4px black;
+}
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-shadow: 0 0 5px var(--link-hover);
+  animation: pulse 1.5s infinite;
+}
+
+a:active {
+  color: var(--highlight);
+  text-shadow: 0 0 10px var(--highlight);
+}
+/* Buttons */
+button, input[type="submit"], .btn {
+  background-color: var(--neon-green);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Orbitron', sans-serif;
+}
+
+button:hover, input[type="submit"]:hover, .btn:hover {
+  background-color: var(--neon-blue);
+  color: black;
+}
+/* Navbar and menu */
+nav, .menu, .navbar, .header {
+  background-color: var(--secondary-bg-color);
+  border-bottom: 2px solid var(--neon-green);
+  padding: 10px;
+}
+
+nav a, .menu a, .navbar a {
+  color: var(--neon-blue);
+  font-weight: bold;
+}
+
+nav a:hover, .menu a:hover, .navbar a:hover {
+  color: var(--link-hover);
+}
+/* Anime list tweaks */
+.anime-entry, .anime-list .entry, .anime-box {
+  background-color: rgba(30, 30, 30, 0.6);
+  border: 1px solid var(--border-color);
+  margin-bottom: 10px;
+  border-left: 4px solid var(--highlight);
+}
+
+.anime-entry:hover, .anime-list .entry:hover {
+  border-left-color: var(--link-hover);
+  background-color: rgba(60, 60, 60, 0.8);
+}
+/* Transparent table */
+table, th, td {
+  background-color: transparent !important;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 10px;
+}
+
+th {
+  background-color: transparent !important;
+  color: var(--neon-purple) !important;
+  text-shadow: 0 0 5px var(--neon-purple);
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+/* Extra tweaks */
+.table thead {
+  background-color: transparent !important;
+  color: var(--text-color) !important;
+  text-shadow: 0 0 3px var(--highlight);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+input, textarea, select {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Avatar frames and stat boxes */
+.avatar-frame, .user-avatar, .user-stats {
+  border: 2px solid var(--neon-purple);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--neon-purple);
+}
+
+.user-stats .stat {
+  color: var(--neon-green);
+  text-shadow: 0 0 3px var(--neon-green);
+}
+/* Footer */
+.footer {
+  background-color: var(--secondary-bg-color);
+  color: var(--neon-green);
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--highlight);
+  border-radius: 10px;
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 5px var(--link-hover), 0 0 10px var(--link-hover), 0 0 15px var(--link-hover);
+  }
+  50% {
+    text-shadow: 0 0 5px var(--highlight), 0 0 10px var(--highlight), 0 0 15px var(--highlight);
+  }
+  100% {
+    text-shadow: 0 0 5px var(--link-hover), 0 0 10px var(--link-hover), 0 0 15px var(--link-hover);
+  }
+}
