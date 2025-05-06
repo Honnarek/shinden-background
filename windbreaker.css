@@ -1,5 +1,5 @@
 /* 
-  Wind Breaker  Shinden theme 
+  Wind Breaker Shinden theme 
   Author: Honnari
 */
 
@@ -15,11 +15,8 @@ body,
 * {
     font-family: 'Inter', sans-serif !important;
     font-weight: 400;
+    font-size: 14px;
 }
-
-
-}
-
 
 :root {
   --main-bg-color: rgba(20, 20, 20, 0.9); 
@@ -43,6 +40,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 /* Container backgrounds */
 .container,
 .main-content,
@@ -59,11 +57,32 @@ body {
   border-radius: 10px;
   border: 1px solid var(--border-color);
 }
+
 /* Headers */
-h1, h2, h3, h4, h5 {
+h1 {
+  font-size: 24px;
   color: var(--neon-purple);
   text-shadow: 1px 1px 4px black;
 }
+
+h2 {
+  font-size: 20px;
+  color: var(--neon-purple);
+  text-shadow: 1px 1px 4px black;
+}
+
+h3 {
+  font-size: 18px;
+  color: var(--neon-purple);
+  text-shadow: 1px 1px 4px black;
+}
+
+h4, h5 {
+  font-size: 16px;
+  color: var(--neon-purple);
+  text-shadow: 1px 1px 4px black;
+}
+
 /* Links */
 a {
   color: var(--link-color);
@@ -81,6 +100,7 @@ a:active {
   color: var(--highlight);
   text-shadow: 0 0 10px var(--highlight);
 }
+
 /* Buttons */
 button, input[type="submit"], .btn {
   background-color: var(--neon-green);
@@ -90,13 +110,13 @@ button, input[type="submit"], .btn {
   padding: 8px 12px;
   cursor: pointer;
   transition: 0.3s;
-  font-family: 'Inter', sans-serif;
 }
 
 button:hover, input[type="submit"]:hover, .btn:hover {
   background-color: var(--neon-blue);
   color: black;
 }
+
 /* Navbar and menu */
 nav, .menu, .navbar, .header {
   background-color: var(--secondary-bg-color);
@@ -112,6 +132,7 @@ nav a, .menu a, .navbar a {
 nav a:hover, .menu a:hover, .navbar a:hover {
   color: var(--link-hover);
 }
+
 /* Anime list tweaks */
 .anime-entry, .anime-list .entry, .anime-box {
   background-color: rgba(30, 30, 30, 0.6);
@@ -124,6 +145,7 @@ nav a:hover, .menu a:hover, .navbar a:hover {
   border-left-color: var(--link-hover);
   background-color: rgba(60, 60, 60, 0.8);
 }
+
 /* Transparent table */
 table, th, td {
   background-color: transparent !important;
@@ -141,7 +163,7 @@ th {
 tr:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
-/* Extra tweaks */
+
 .table thead {
   background-color: transparent !important;
   color: var(--text-color) !important;
@@ -158,7 +180,6 @@ input, textarea, select {
   border: 1px solid var(--border-color);
   border-radius: 5px;
   padding: 5px;
-  font-family: 'Inter', sans-serif;
 }
 
 /* Avatar frames and stat boxes */
@@ -173,6 +194,7 @@ input, textarea, select {
   color: var(--neon-green);
   text-shadow: 0 0 3px var(--neon-green);
 }
+
 /* Footer */
 .footer {
   background-color: var(--secondary-bg-color);
@@ -181,6 +203,7 @@ input, textarea, select {
   padding: 10px;
   font-size: 0.9em;
 }
+
 /* Scrollbar customization */
 ::-webkit-scrollbar {
   width: 10px;
@@ -195,6 +218,7 @@ input, textarea, select {
   border-radius: 10px;
 }
 
+/* Link animation */
 @keyframes pulse {
   0% {
     text-shadow: 0 0 5px var(--link-hover), 0 0 10px var(--link-hover), 0 0 15px var(--link-hover);
