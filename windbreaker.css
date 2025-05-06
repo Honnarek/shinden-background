@@ -5,9 +5,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 
-body, * {
+input[type="text"],
+input[type="search"],
+input,
+button,
+select,
+textarea,
+body,
+* {
     font-family: 'Inter', sans-serif !important;
-    font-weight: 300;
+    font-weight: 400;
+}
+
+
 }
 
 
